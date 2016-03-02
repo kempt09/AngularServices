@@ -6,7 +6,16 @@ app.controller('input', function($scope, transferService, $location){
 
     $scope.collect = function(){
 
-        var arrayOfWords = [$scope.words.one, $scope.words.two, $scope.words.three, $scope.words.four];
+        var arrayOfWords = [
+            $scope.words.one,
+            $scope.words.two,
+            $scope.words.three,
+            $scope.words.four,
+            $scope.words.five,
+            $scope.words.six,
+            $scope.words.seven,
+            $scope.words.eight
+        ];
 
         arrayOfWords.forEach(function(word){
 
@@ -18,7 +27,7 @@ app.controller('input', function($scope, transferService, $location){
 
     };
 
-    $scope.words = { one: '', two: '', three:'', four: ''};
+    $scope.words = { one: '', two: '', three:'', four: '', five: '', six: '', seven:'', eight: ''};
 
 });
 
